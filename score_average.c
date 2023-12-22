@@ -20,10 +20,11 @@ int main()
 		a2 = a1; // a2 = 6
 		sum = score[a2 - 1]; // s[5]
 		while (a2 < b) { // 8 < 9
-			sum = sum + score[a2]; // ((s[5]+s[6])+s[7])+s[8]
+			sum = sum + score[a2];
 			a2++;
 		}
-		average[i] = (double)sum / (b - a1 + 1);
+		average[i] = (double)sum / (b - a1 + 1); // 수정사항
+
 	}
 
 	for (int i = 0; i < K; i++) {
